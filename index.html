@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>guess the number</title>
+    <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>Guess the number</h1>
-    <h4>Guess the Number between 0 to 100</h4>
-    <input id="input"  type="number" placeholder="enter number">
-    <span id="error"></span>
-    <button id="submitbtn" onclick="hanbleSubmit()">submit</button>
-    <button id="resetBtn" onclick="reset()">Reset</button>
-    <span style="margin-top: 20px;" ><span id="guesses"> </span> </span>
-    <span>atempt : <span id="atempt"></span> </span>
+    <button id="memeButton">Generate Meme</button>
+    <div class="memeContainer">
+        <h1 id="memeTitle">Loading...</h1>
+        <img class="memeImg" >
+        <p class="memeAuther"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
